@@ -1,0 +1,179 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Warna tema */
+:root {
+    --green: #2e7d32;
+    --light-green: #a5d6a7;
+    --dark-green: #1b5e20;
+    --gray-bg: #f4f6f5;
+    --white: #fff;
+    --danger: #d32f2f;
+    --success: #388e3c;
+}
+
+/* Container utama */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--gray-bg);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--green);
+    padding: 15px 20px;
+    color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.header-title h1 {
+    font-size: 24px;
+}
+
+.user-info {
+    text-align: right;
+}
+
+.user-info strong {
+    display: block;
+}
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 5px;
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/* Card */
+.card {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--green);
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    color: var(--green);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--light-green);
+    color: var(--dark-green);
+}
+
+.total-row {
+    background-color: #e8f5e9;
+    font-weight: bold;
+}
+
+/* Form dan input */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-search {
+    background-color: var(--green);
+    color: white;
+    margin-left: 10px;
+}
+
+.btn-add {
+    background-color: var(--green);
+    color: white;
+}
+
+.btn-save {
+    background-color: var(--dark-green);
+    color: white;
+    margin-top: 15px;
+}
+
+.btn-delete {
+    background-color: var(--danger);
+    color: white;
+}
+
+.action-row {
+    text-align: right;
+}
+
+/* Pesan */
+.success-message {
+    background-color: #c8e6c9;
+    color: var(--success);
+    padding: 10px;
+    border-left: 4px solid var(--success);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    background-color: #ffcdd2;
+    color: var(--danger);
+    padding: 10px;
+    border-left: 4px solid var(--danger);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.debug-message {
+    background-color: #fff8e1;
+    color: #f57f17;
+    padding: 10px;
+    border-left: 4px solid #fbc02d;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.empty-text {
+    color: #757575;
+    font-style: italic;
+}
+
+/* Teks hasil pencarian */
+.result-item {
+    font-weight: bold;
+    color: var(--dark-green);
+}
